@@ -46,21 +46,8 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/fonts/
-    - assets/fonts/roboto/
     - assets/fonts/open_sans/
   fonts:
-    - family: Roboto
-      fonts:
-        - asset: assets/fonts/roboto/Roboto_Regular.ttf
-    - family: Roboto Light
-      fonts:
-        - asset: assets/fonts/roboto/Roboto_Light.ttf
-    - family: Roboto Bold
-      fonts:
-        - asset: assets/fonts/roboto/Roboto_Bold.ttf
-    - family: Roboto Italic
-      fonts:
-        - asset: assets/fonts/roboto/Roboto_Italic.ttf
     - family: OpenSans
       fonts:
         - asset: assets/fonts/open_sans/OpenSans_Regular.ttf

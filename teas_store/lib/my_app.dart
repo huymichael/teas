@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: AppTheme.customTheme,
       onGenerateRoute: AppRoute().generateRoute,
-      initialRoute: RoutePath.homeRoute,
+      initialRoute: RoutePath.splashRoute,
     );
   }
 }

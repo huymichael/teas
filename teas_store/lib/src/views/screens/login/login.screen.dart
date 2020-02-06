@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:teas_store/src/routes/route.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -15,11 +14,9 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
       body: Center(
         child: InkWell(
-          onTap: () {
-            navigateTo(context, LoginScreen());
-          },
+          onTap: () {},
           child: Container(
-            child: Text('go to sign up'),
+            child: Text('Login'),
           ),
         ),
       ),

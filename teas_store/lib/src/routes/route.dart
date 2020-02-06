@@ -1,10 +1,33 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:teas_store/src/routes/route_path.dart';
+import 'package:teas_store/src/views/screens/login/login.screen.dart';
+import 'package:teas_store/src/views/screens/splash/splash.screen.dart';
+import 'package:teas_store/src/views/screens/start/start.screen.dart';
 
-Future navigateTo(BuildContext context, Widget page) {
-  if (page == null) {
-    return Future(null);
+class AppRoute {
+  Route<dynamic> generateRoute(RouteSettings settings) {
+    switch (settings.name) {
+      case RoutePath.homeRoute:
+        return _goTo(StartScreen());
+      case RoutePath.splashRoute:
+        return _goTo(SplashScreen());
+      case RoutePath.loginRoute:
+        return _goTo(LoginScreen());
+      default:
+        return _goTo(undefinedView(settings.name));
+    }
   }
-  var route = MaterialPageRoute(builder: (builder) => page);
-  return Navigator.push(context, route);
+
+  MaterialPageRoute _goTo(Widget widget) {
+    return MaterialPageRoute(builder: (_) => widget);
+  }
+
+  Widget undefinedView(String routeName) {
+    return Scaffold(
+      body: Center(
+        child: Text('Route for $routeName is not defined'),
+      ),
+    );
+  }
 }

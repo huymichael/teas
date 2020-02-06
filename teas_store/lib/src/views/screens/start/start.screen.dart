@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:teas_store/src/routes/route_path.dart';
 import 'package:teas_store/src/shared/widgets/background_image.widget.dart';
 import 'package:teas_store/src/shared/widgets/rounded_button.widget.dart';
 import 'package:teas_store/src/shared/widgets/rounded_outline_button.widget.dart';
@@ -38,7 +39,10 @@ class StartScreen extends StatelessWidget {
                       buttonLabel: 'Log In',
                       buttonLabelStyle: TextStyle(color: Colors.white),
                       buttonColor: ColorConstant.DEFAULT,
-                      onPress: () {},
+                      onPress: () {
+                        Navigator.pushNamed(context, RoutePath.loginRoute,
+                            arguments: 'Data Passed');
+                      },
                     ),
                     RoundedOutlineButton(
                       buttonLabel: 'Sign Up',

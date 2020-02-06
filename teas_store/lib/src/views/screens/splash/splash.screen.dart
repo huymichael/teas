@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teas_store/src/views/screens/start/start.screen.dart';
+import 'package:teas_store/src/routes/route_path.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -47,8 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void openStartScreen() {
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => StartScreen()));
+      Navigator.pushNamed(context, RoutePath.homeRoute);
     });
   }
 }

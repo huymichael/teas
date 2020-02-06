@@ -10,5 +10,5 @@ class ColorConstant {
   static const Color SMOKE = Color(0xfff3f3f3);
 
   static const ColorFilter DARK_FILTER =
-      ColorFilter.mode(Colors.black54, BlendMode.dst);
+      ColorFilter.mode(Colors.black54, BlendMode.hardLight);
 }

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class BackgroundImage extends StatelessWidget {
-  BackgroundImage({@required this.imgUrl, this.colorFilter});
+  BackgroundImage({@required this.imgUrl, this.widget, this.colorFilter});
 
   final String imgUrl;
   final ColorFilter colorFilter;
+  final Widget widget;
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +20,7 @@ class BackgroundImage extends StatelessWidget {
             colorFilter: colorFilter,
             fit: BoxFit.cover),
       ),
+      child: widget,
     );
   }
 }

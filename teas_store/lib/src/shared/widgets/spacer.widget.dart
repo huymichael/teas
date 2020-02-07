@@ -10,7 +10,7 @@ class WidgetSpacer extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: width ?? 0,
-      height: width ?? 0,
+      height: height ?? 0,
     );
   }
 }

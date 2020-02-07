@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teas_store/src/routes/route_path.dart';
+import 'package:teas_store/src/utils/constants/text_style.constant.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -31,13 +32,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 backgroundColor: Colors.transparent,
                 child: Image.asset('assets/icons/koi_icon.png'),
               ),
-              Text(
-                'Michael Teas',
-                style: TextStyle(
-                    color: Colors.white70,
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.bold),
-              ),
+              Text('michael teas'.toUpperCase(),
+                  style: TextStyleConstant.SPLASH_TITLE),
             ],
           ),
         ],
@@ -47,7 +43,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void openStartScreen() {
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushNamed(context, RoutePath.homeRoute);
+      Navigator.pushNamedAndRemoveUntil(
+          context, RoutePath.homeRoute, (_) => false);
     });
   }
 }

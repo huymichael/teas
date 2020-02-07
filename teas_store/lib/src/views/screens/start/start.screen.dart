@@ -4,6 +4,7 @@ import 'package:teas_store/src/routes/route_path.dart';
 import 'package:teas_store/src/shared/widgets/background_image.widget.dart';
 import 'package:teas_store/src/shared/widgets/rounded_button.widget.dart';
 import 'package:teas_store/src/shared/widgets/rounded_outline_button.widget.dart';
+import 'package:teas_store/src/shared/widgets/spacer.widget.dart';
 import 'package:teas_store/src/utils/constants/colors.constant.dart';
 import 'package:teas_store/src/utils/constants/images.constant.dart';
 
@@ -43,6 +44,9 @@ class StartScreen extends StatelessWidget {
                         Navigator.pushNamed(context, RoutePath.loginRoute,
                             arguments: 'Data Passed');
                       },
+                    ),
+                    WidgetSpacer(
+                      height: 15.0,
                     ),
                     RoundedOutlineButton(
                       buttonLabel: 'Sign Up',

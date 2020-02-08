@@ -41,8 +41,7 @@ class StartScreen extends StatelessWidget {
                       buttonLabelStyle: TextStyle(color: Colors.white),
                       buttonColor: ColorConstant.DEFAULT,
                       onPress: () {
-                        Navigator.pushNamed(context, RoutePath.loginRoute,
-                            arguments: 'Data Passed');
+                        Navigator.pushNamed(context, RoutePath.loginRoute);
                       },
                     ),
                     WidgetSpacer(
@@ -51,7 +50,9 @@ class StartScreen extends StatelessWidget {
                     RoundedOutlineButton(
                       buttonLabel: 'Sign Up',
                       buttonLabelStyle: TextStyle(color: ColorConstant.DEFAULT),
-                      onPress: () {},
+                      onPress: () {
+                        Navigator.pushNamed(context, RoutePath.signUpRoute);
+                      },
                     ),
                   ],
                 ),

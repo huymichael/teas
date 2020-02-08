@@ -5,7 +5,7 @@ import 'package:teas_store/src/shared/widgets/background_image.widget.dart';
 import 'package:teas_store/src/utils/constants/colors.constant.dart';
 import 'package:teas_store/src/utils/constants/images.constant.dart';
 import 'package:teas_store/src/views/screens/login/widgets/login_section.widget.dart';
-import 'package:teas_store/src/views/screens/login/widgets/top_welcome.widget.dart';
+import 'package:teas_store/src/views/screens/login/widgets/login_top_welcome.widget.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -22,7 +22,7 @@ class LoginScreen extends StatelessWidget {
               imgUrl: ImageConstant.LOGIN_SCREEN_BACKGROUND,
               colorFilter: ColorConstant.DARK_FILTER,
               backgroundFit: BoxFit.contain,
-              backgrounAlign: Alignment.center,
+              backgrounAlign: Alignment.topCenter,
             ),
           ),
           SingleChildScrollView(
@@ -58,6 +58,6 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
-  _buildTopWelcome() => TopWelcome();
+  _buildTopWelcome() => LoginTopWelcome();
   _buildLoginSection() => LoginSection();
 }

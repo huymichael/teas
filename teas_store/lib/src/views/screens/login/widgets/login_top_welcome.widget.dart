@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:teas_store/src/shared/widgets/spacer.widget.dart';
 import 'package:teas_store/src/utils/constants/images.constant.dart';
+import 'package:teas_store/src/utils/constants/text_style.constant.dart';
 
-class TopWelcome extends StatelessWidget {
+class LoginTopWelcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 20.0, bottom: 20.0),
+      margin: EdgeInsets.only(top: 30.0, bottom: 20.0),
       child: Column(
         children: <Widget>[
           CircleAvatar(
@@ -19,10 +20,7 @@ class TopWelcome extends StatelessWidget {
           ),
           Text(
             'Welcome Back!',
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 30.0,
-                fontFamily: 'OpenSans Bold'),
+            style: TextStyleConstant.TITLE_BOLD_30,
           ),
         ],
       ),

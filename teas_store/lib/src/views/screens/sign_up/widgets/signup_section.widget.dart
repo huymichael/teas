@@ -9,37 +9,41 @@ import 'package:teas_store/src/utils/constants/colors.constant.dart';
 import 'package:teas_store/src/utils/constants/text_style.constant.dart';
 import 'package:teas_store/src/utils/constants/widget_decoration.widget.dart';
 
-class LoginSection extends StatefulWidget {
+class SignUpSection extends StatefulWidget {
   @override
-  _LoginSectionState createState() => _LoginSectionState();
+  _SignUpSectionState createState() => _SignUpSectionState();
 }
 
-class _LoginSectionState extends State<LoginSection> {
+class _SignUpSectionState extends State<SignUpSection> {
   final GlobalKey<FormBuilderState> _formState = GlobalKey<FormBuilderState>();
   bool _isHidePassword = true;
+  bool _isHideConfirmPassword = true;
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Container(
-        padding: EdgeInsets.symmetric(vertical: 25.0, horizontal: 30.0),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(30.0),
-            topRight: Radius.circular(30.0),
-          ),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            _buildHeading(),
-            WidgetSpacer(
-              height: 20.0,
+      child: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.only(top: 20.0, left: 30.0, right: 30.0),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30.0),
+              topRight: Radius.circular(30.0),
             ),
-            _buildLoginForm(),
-            _buildLoginButton(),
-          ],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              _buildHeading(),
+              WidgetSpacer(
+                height: 20.0,
+              ),
+              _buildSignUpForm(),
+              _buildSignUpButton(),
+            ],
+          ),
         ),
       ),
     );
@@ -53,33 +57,30 @@ class _LoginSectionState extends State<LoginSection> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           GradientText(
-            text: 'Login',
+            text: 'create account!'.toUpperCase(),
             gradient: LinearGradient(colors: ColorConstant.MOUNTAIN_ROCK_COLOR),
-            textStyle: TextStyle(
-              fontFamily: 'Eater',
-              fontSize: 30.0,
-            ),
+            textStyle: TextStyleConstant.EATER_TITLE_30,
           ),
           Row(
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
               Flexible(
-                child: Text('Don\'t have an account ?'),
                 flex: 2,
+                child: Text('Already have an account?'),
+              ),
+              WidgetSpacer(
+                width: 5.0,
               ),
               Flexible(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 4),
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.pushNamed(
-                          context, RoutePath.signUpRoute);
-                    },
-                    child: Container(
-                      child: Text(
-                        'Sign up here.',
-                        style: TextStyleConstant.ANCHOR_TEXT,
-                      ),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(
+                        context, RoutePath.loginRoute);
+                  },
+                  child: Container(
+                    child: Text(
+                      'Sign in',
+                      style: TextStyleConstant.ANCHOR_TEXT,
                     ),
                   ),
                 ),
@@ -91,20 +92,17 @@ class _LoginSectionState extends State<LoginSection> {
     );
   }
 
-  Widget _buildLoginForm() {
+  Widget _buildSignUpForm() {
     return FormBuilder(
       key: _formState,
       child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           FormBuilderTextField(
-            attribute: 'username',
+            attribute: 'email',
             maxLines: 1,
-            keyboardType: TextInputType.emailAddress,
             decoration: WidgetDecoration.ROUNDED_TEXT_FORM_FIELD.copyWith(
-              hintText: 'Username',
-              prefixIcon: Icon(Icons.person),
+              prefixIcon: Icon(Icons.mail),
+              hintText: 'Your email',
               contentPadding: EdgeInsets.all(20.0),
             ),
           ),
@@ -112,8 +110,8 @@ class _LoginSectionState extends State<LoginSection> {
             height: 10.0,
           ),
           FormBuilderTextField(
-            maxLines: 1,
             attribute: 'password',
+            maxLines: 1,
             obscureText: _isHidePassword,
             decoration: WidgetDecoration.ROUNDED_TEXT_FORM_FIELD.copyWith(
               hintText: 'Password',
@@ -132,18 +130,25 @@ class _LoginSectionState extends State<LoginSection> {
             ),
           ),
           WidgetSpacer(
-            height: 20.0,
+            height: 10.0,
           ),
-          InkWell(
-            onTap: () {
-              //TODO implement reset password form
-              print('Navigate to Reset password form - not implement yet');
-            },
-            child: Container(
-              child: Text(
-                'Forgot your password?',
-                style: TextStyleConstant.ANCHOR_TEXT,
-                textAlign: TextAlign.end,
+          FormBuilderTextField(
+            attribute: 'confirmPassword',
+            maxLines: 1,
+            obscureText: _isHideConfirmPassword,
+            decoration: WidgetDecoration.ROUNDED_TEXT_FORM_FIELD.copyWith(
+              prefixIcon: Icon(Icons.lock),
+              hintText: 'Confirm Password',
+              contentPadding: EdgeInsets.all(20.0),
+              suffixIcon: IconButton(
+                onPressed: () {
+                  setState(() {
+                    _isHideConfirmPassword = !_isHideConfirmPassword;
+                  });
+                },
+                icon: _isHideConfirmPassword
+                    ? Icon(Icons.visibility_off)
+                    : Icon(Icons.visibility),
               ),
             ),
           ),
@@ -152,19 +157,12 @@ class _LoginSectionState extends State<LoginSection> {
     );
   }
 
-  Widget _buildLoginButton() {
+  Widget _buildSignUpButton() {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 35.0),
+      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
       child: RoundedButton(
-        buttonLabel: 'Login',
-        onPress: () {
-          //TODO implement authenticate here
-          //TOTO implement navigation
-          print('Navigate to Home screen');
-          if (_formState.currentState.saveAndValidate()) {
-            print(_formState.currentState.value);
-          }
-        },
+        onPress: () {},
+        buttonLabel: 'Create',
         buttonColor: ColorConstant.DEFAULT_LIGHT,
         buttonLabelStyle: TextStyle(color: Colors.white),
       ),

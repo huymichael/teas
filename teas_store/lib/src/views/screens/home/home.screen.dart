@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teas_store/src/blocs/product_category_bloc/bloc/product_category.bloc.dart';
+import 'package:teas_store/src/blocs/product_category/product_category.bloc.dart';
 import 'package:teas_store/src/models/products/product_category.model.dart';
 import 'package:teas_store/src/shared/widgets/background_image.widget.dart';
 import 'package:teas_store/src/utils/constants/colors.constant.dart';

@@ -2,8 +2,9 @@ import 'dart:async';
 
 import 'package:rxdart/rxdart.dart';
 import 'package:teas_store/src/bases/bloc/bloc_base.dart';
-import 'package:teas_store/src/blocs/product_category_bloc/repo/product_category.repo.dart';
 import 'package:teas_store/src/models/products/product_category.model.dart';
+
+import 'product_category.repo.dart';
 
 class ProductCategoryBloc implements BlocBase {
   final _productRepository = ProductCategoryRepository();

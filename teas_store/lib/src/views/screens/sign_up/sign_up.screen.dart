@@ -52,7 +52,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             top: 20,
             child: IconButton(
               onPressed: () {
-                Navigator.pushNamed(context, RoutePath.homeRoute);
+                Navigator.pushNamed(context, RoutePath.rootRoute);
               },
               icon: Icon(
                 Icons.close,

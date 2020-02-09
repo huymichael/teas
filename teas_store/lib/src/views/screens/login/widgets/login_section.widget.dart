@@ -156,9 +156,7 @@ class _LoginSectionState extends State<LoginSection> {
       child: RoundedButton(
         buttonLabel: 'Login',
         onPress: () {
-          //TODO implement authenticate here
-          //TOTO implement navigation
-          print('Navigate to Home screen');
+          Navigator.pushNamed(context, RoutePath.homeRoute);
           if (_formState.currentState.saveAndValidate()) {
             print(_formState.currentState.value);
           }

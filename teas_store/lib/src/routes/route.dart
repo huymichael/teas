@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teas_store/src/routes/route_path.dart';
+import 'package:teas_store/src/views/screens/home/home.screen.dart';
 import 'package:teas_store/src/views/screens/login/login.screen.dart';
 import 'package:teas_store/src/views/screens/reset_passwrod.screen/forgot_password.screen.dart';
 import 'package:teas_store/src/views/screens/sign_up/sign_up.screen.dart';
@@ -10,7 +11,7 @@ import 'package:teas_store/src/views/screens/start/start.screen.dart';
 class AppRoute {
   Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case RoutePath.homeRoute:
+      case RoutePath.rootRoute:
         return _goTo(StartScreen());
       case RoutePath.splashRoute:
         return _goTo(SplashScreen());
@@ -20,6 +21,8 @@ class AppRoute {
         return _goTo(SignUpScreen());
       case RoutePath.forgotPasswordRoute:
         return _goTo(ForgotPasswordScreen());
+      case RoutePath.homeRoute:
+        return _goTo(HomeScreen());
       default:
         return _goTo(undefinedView(settings.name));
     }

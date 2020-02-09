@@ -27,7 +27,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               imgUrl: ImageConstant.SIGN_UP_SCREEN_BACKGROUND,
               colorFilter: ColorConstant.DARK_FILTER,
               backgroundFit: BoxFit.contain,
-              backgrounAlign: Alignment.topCenter,
+              backgroundAlign: Alignment.topCenter,
             ),
           ),
           SingleChildScrollView(

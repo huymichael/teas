@@ -22,7 +22,7 @@ class LoginScreen extends StatelessWidget {
               imgUrl: ImageConstant.LOGIN_SCREEN_BACKGROUND,
               colorFilter: ColorConstant.DARK_FILTER,
               backgroundFit: BoxFit.contain,
-              backgrounAlign: Alignment.topCenter,
+              backgroundAlign: Alignment.topCenter,
             ),
           ),
           SingleChildScrollView(

@@ -20,7 +20,7 @@ class LoginTopWelcome extends StatelessWidget {
           ),
           Text(
             'Welcome Back!',
-            style: TextStyleConstant.TITLE_BOLD_30,
+            style: TextStyleConstant.BOLD_TITLE_30,
           ),
         ],
       ),

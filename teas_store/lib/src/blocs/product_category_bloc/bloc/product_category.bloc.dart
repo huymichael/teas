@@ -1,10 +1,27 @@
-import 'package:flutter/material.dart';
-import 'package:teas_store/src/blocs/bloc.dart';
+import 'dart:async';
 
-class ProductCategoryBloc implements BlocBase{
+import 'package:rxdart/rxdart.dart';
+import 'package:teas_store/src/bases/bloc/bloc_base.dart';
+import 'package:teas_store/src/blocs/product_category_bloc/repo/product_category.repo.dart';
+import 'package:teas_store/src/models/products/product_category.model.dart';
+
+class ProductCategoryBloc implements BlocBase {
+  final _productRepository = ProductCategoryRepository();
+  final _fetchAll = PublishSubject<List<ProductCategory>>();
+
+  Stream<List<ProductCategory>> get fetchAll => _fetchAll.stream;
+
+  fetchAllCategory() async {
+    List<ProductCategory> listCategory =
+        await _productRepository.fetchAllCategory();
+    _fetchAll.sink.add(listCategory);
+  }
 
   @override
-  void dispose() {
-    // TODO: implement dispose
+  void dispose() async {
+    await _fetchAll.drain();
+    _fetchAll.close();
   }
 }
+
+final productCategoryBloc = ProductCategoryBloc();

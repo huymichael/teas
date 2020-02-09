@@ -20,7 +20,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               imgUrl: ImageConstant.FORGOT_PASS_BACKGROUND,
               backgroundFit: BoxFit.fitWidth,
               colorFilter: ColorConstant.DARK_FILTER,
-              backgrounAlign: Alignment.topCenter,
+              backgroundAlign: Alignment.topCenter,
             ),
           ),
           SingleChildScrollView(

@@ -11,7 +11,7 @@ class ForgotPasswordHeading extends StatelessWidget {
         children: <Widget>[
           Text(
             'Forgot you password ?',
-            style: TextStyleConstant.TITLE_BOLD_20,
+            style: TextStyleConstant.REGULAR_TITLE_20,
           ),
           CircleAvatar(
             child: Image.asset(ImageConstant.FORGOT_PASS_LOGO),

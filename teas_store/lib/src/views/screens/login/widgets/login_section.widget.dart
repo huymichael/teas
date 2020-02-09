@@ -72,8 +72,7 @@ class _LoginSectionState extends State<LoginSection> {
                   padding: const EdgeInsets.symmetric(horizontal: 4),
                   child: InkWell(
                     onTap: () {
-                      Navigator.pushNamed(
-                          context, RoutePath.signUpRoute);
+                      Navigator.pushNamed(context, RoutePath.signUpRoute);
                     },
                     child: Container(
                       child: Text(
@@ -136,8 +135,7 @@ class _LoginSectionState extends State<LoginSection> {
           ),
           InkWell(
             onTap: () {
-              //TODO implement reset password form
-              print('Navigate to Reset password form - not implement yet');
+              Navigator.pushNamed(context, RoutePath.forgotPasswordRoute);
             },
             child: Container(
               child: Text(

@@ -1,17 +1,15 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:teas_store/src/routes/route_path.dart';
 import 'package:teas_store/src/shared/widgets/background_image.widget.dart';
 import 'package:teas_store/src/utils/constants/colors.constant.dart';
 import 'package:teas_store/src/utils/constants/images.constant.dart';
-import 'package:teas_store/src/views/screens/login/widgets/login_section.widget.dart';
-import 'package:teas_store/src/views/screens/login/widgets/login_top_welcome.widget.dart';
+import 'package:teas_store/src/views/screens/reset_passwrod.screen/widgets/forgot_pass_heading.widget.dart';
+import 'package:teas_store/src/views/screens/reset_passwrod.screen/widgets/forgot_pass_section.widget.dart';
 
-class LoginScreen extends StatelessWidget {
+class ForgotPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double _screenHeight = MediaQuery.of(context).size.height;
     double _screenWidth = MediaQuery.of(context).size.width;
+    double _screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: Stack(
@@ -19,23 +17,23 @@ class LoginScreen extends StatelessWidget {
           Container(
             height: _screenHeight * 0.5,
             child: BackgroundImage(
-              imgUrl: ImageConstant.LOGIN_SCREEN_BACKGROUND,
+              imgUrl: ImageConstant.FORGOT_PASS_BACKGROUND,
+              backgroundFit: BoxFit.fitWidth,
               colorFilter: ColorConstant.DARK_FILTER,
-              backgroundFit: BoxFit.contain,
               backgrounAlign: Alignment.topCenter,
             ),
           ),
           SingleChildScrollView(
             physics: BouncingScrollPhysics(),
             child: Container(
-              height: _screenHeight,
               width: _screenWidth,
+              height: _screenHeight,
               child: SafeArea(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    _buildTopWelcome(),
-                    _buildLoginSection(),
+                    _buildTopHeading(),
+                    _buildForgotPassSection(),
                   ],
                 ),
               ),
@@ -45,7 +43,7 @@ class LoginScreen extends StatelessWidget {
             top: 20,
             child: IconButton(
               onPressed: () {
-                Navigator.pushNamed(context, RoutePath.homeRoute);
+                Navigator.pop(context);
               },
               icon: Icon(
                 Icons.close,
@@ -58,6 +56,7 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
-  _buildTopWelcome() => LoginTopWelcome();
-  _buildLoginSection() => LoginSection();
+  _buildTopHeading() => ForgotPasswordHeading();
+
+  _buildForgotPassSection() => ForgotPasswordSection();
 }

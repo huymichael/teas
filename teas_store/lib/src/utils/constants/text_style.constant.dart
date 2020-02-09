@@ -11,9 +11,9 @@ class TextStyleConstant {
       FontConstant.BOLD.copyWith(color: Colors.white, fontSize: 30.0);
   static final SPLASH_TITLE = FontConstant.Eater.copyWith(
       color: Colors.white70, fontWeight: FontWeight.bold, fontSize: 30.0);
-  static final EATER_TITLE_30 = TextStyle(
+  static final EATER_TITLE_25 = TextStyle(
     fontFamily: 'Eater',
-    fontSize: 30.0,
+    fontSize: 25.0,
   );
 
   // Anchor Text

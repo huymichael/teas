@@ -59,7 +59,7 @@ class _SignUpSectionState extends State<SignUpSection> {
           GradientText(
             text: 'create account!'.toUpperCase(),
             gradient: LinearGradient(colors: ColorConstant.MOUNTAIN_ROCK_COLOR),
-            textStyle: TextStyleConstant.EATER_TITLE_30,
+            textStyle: TextStyleConstant.EATER_TITLE_25,
           ),
           Row(
             mainAxisSize: MainAxisSize.max,

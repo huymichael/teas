@@ -21,30 +21,27 @@ class _SignUpSectionState extends State<SignUpSection> {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: SingleChildScrollView(
-        child: Container(
-          padding: EdgeInsets.only(top: 20.0, left: 30.0, right: 30.0),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(30.0),
-              topRight: Radius.circular(30.0),
-            ),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-              _buildHeading(),
-              WidgetSpacer(
-                height: 20.0,
-              ),
-              _buildSignUpForm(),
-              _buildSignUpButton(),
-            ],
-          ),
+    return Container(
+      padding: EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 0),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30.0),
+          topRight: Radius.circular(30.0),
         ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          _buildHeading(),
+          WidgetSpacer(
+            height: 20.0,
+          ),
+          _buildSignUpForm(),
+          _buildSignUpButton(),
+        ],
       ),
     );
   }
@@ -74,8 +71,7 @@ class _SignUpSectionState extends State<SignUpSection> {
               Flexible(
                 child: InkWell(
                   onTap: () {
-                    Navigator.pushNamed(
-                        context, RoutePath.loginRoute);
+                    Navigator.pushNamed(context, RoutePath.loginRoute);
                   },
                   child: Container(
                     child: Text(

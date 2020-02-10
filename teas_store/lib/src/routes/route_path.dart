@@ -6,4 +6,5 @@ class RoutePath {
   static const String signUpRoute = '/signup';
   static const String forgotPasswordRoute = '/forgot-pass';
   static const String homeRoute = '/home';
+  static const String featuredCategoryRoute = '/featured-category';
 }

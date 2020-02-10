@@ -13,7 +13,6 @@ class LoginScreen extends StatelessWidget {
     double _screenHeight = MediaQuery.of(context).size.height;
     double _screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Colors.transparent,
       body: Stack(
         children: <Widget>[
           Container(
@@ -21,7 +20,7 @@ class LoginScreen extends StatelessWidget {
             child: BackgroundImage(
               imgUrl: ImageConstant.LOGIN_SCREEN_BACKGROUND,
               colorFilter: ColorConstant.DARK_FILTER,
-              backgroundFit: BoxFit.contain,
+              backgroundFit: BoxFit.cover,
               backgroundAlign: Alignment.topCenter,
             ),
           ),

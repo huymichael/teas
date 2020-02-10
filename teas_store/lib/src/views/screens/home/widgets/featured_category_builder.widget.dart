@@ -1,7 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teas_store/src/blocs/product_category/product_category.bloc.dart';
 import 'package:teas_store/src/models/products/product_category.model.dart';
 import 'package:teas_store/src/shared/widgets/background_image.widget.dart';
+import 'package:teas_store/src/utils/constants/colors.constant.dart';
+import 'package:teas_store/src/utils/constants/text_style.constant.dart';
 
 class FeaturedCategoryBuilder extends StatefulWidget {
   FeaturedCategoryBuilder({@required this.categoryId});
@@ -34,23 +37,42 @@ class _FeaturedCategoryBuilderState extends State<FeaturedCategoryBuilder> {
       stream: _bloc.fetchFeatureCate,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          final List<ProductCategory> _featureCateList = snapshot.data ?? [];
-          return ListView.builder(
-              itemCount: _featureCateList.length,
-              itemBuilder: (context, index) {
-                final _featuredItem = _featureCateList[index];
-                return Container(
-                  height: 100,
-                  child: BackgroundImage(
-                    imgUrl: _featureCateList[index].categoryImgUrl,
-                  ),
-                );
-              });
+          List<ProductCategory> _featureCateList = snapshot.data ?? [];
+          return GridView.count(
+            physics: BouncingScrollPhysics(),
+            crossAxisCount: 2,
+            crossAxisSpacing: 1.0,
+            mainAxisSpacing: 1.0,
+            children: _featureCateList
+                .map(
+                  (item) => _buildListItem(item),
+                )
+                .toList(),
+          );
         } else if (snapshot.hasError) {
           return Center(child: Text(snapshot.error.toString()));
         }
         return CircularProgressIndicator();
       },
+    );
+  }
+
+  Widget _buildListItem(ProductCategory featuredCateItem) {
+    return InkWell(
+      child: Container(
+        child: BackgroundImage(
+          imgUrl: featuredCateItem.categoryImgUrl,
+          colorFilter: ColorConstant.DARK_FILTER,
+          widget: Center(
+            child: Text(
+              featuredCateItem.categoryName,
+              textAlign: TextAlign.center,
+              style: TextStyleConstant.EATER_TITLE_25
+                  .copyWith(color: Colors.white),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

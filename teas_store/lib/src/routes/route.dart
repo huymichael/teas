@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teas_store/src/routes/route_path.dart';
 import 'package:teas_store/src/views/screens/home/home.screen.dart';
-import 'package:teas_store/src/views/screens/home/screens/featured_category.screen.dart';
+import 'package:teas_store/src/views/screens/home/featured_category.screen.dart';
 import 'package:teas_store/src/views/screens/login/login.screen.dart';
 import 'package:teas_store/src/views/screens/reset_passwrod.screen/forgot_password.screen.dart';
 import 'package:teas_store/src/views/screens/sign_up/sign_up.screen.dart';

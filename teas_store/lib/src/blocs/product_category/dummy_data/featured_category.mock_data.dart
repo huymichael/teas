@@ -3,7 +3,7 @@ import 'package:teas_store/src/utils/constants/images.constant.dart';
 import 'package:teas_store/src/utils/id_generator.util.dart';
 
 class FeaturedCategoryMockData {
-  List<ProductCategory> featuredTeaList = [
+  final List<ProductCategory> featuredTeaList = [
     ProductCategory(
         id: IdGenerator().getID(),
         categoryName: 'Green Tea',
@@ -42,7 +42,7 @@ class FeaturedCategoryMockData {
             'The most ancient Japanese tea rich in flavour and properties.'),
   ];
 
-  List<ProductCategory> featuredTeapotList = [
+  final List<ProductCategory> featuredTeapotList = [
     ProductCategory(
       id: IdGenerator().getID(),
       categoryName: 'Glass Teapots',
@@ -73,7 +73,7 @@ class FeaturedCategoryMockData {
     ),
   ];
 
-  List<ProductCategory> featuredTeacupList = [
+  final List<ProductCategory> featuredTeacupList = [
     ProductCategory(
       id: IdGenerator().getID(),
       categoryName: 'Glass Mugs',

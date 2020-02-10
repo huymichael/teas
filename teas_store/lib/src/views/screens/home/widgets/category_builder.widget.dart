@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:teas_store/src/bases/bloc/bloc_base.dart';
 import 'package:teas_store/src/blocs/product_category/product_category.bloc.dart';
 import 'package:teas_store/src/models/products/product_category.model.dart';
 import 'package:teas_store/src/routes/route_path.dart';
@@ -60,14 +59,14 @@ class _CategoryBuilderState extends State<CategoryBuilder> {
   Widget _buildListItem(ProductCategory categoryItem) {
     return InkWell(
       onTap: () {
-        if (_isFeaturedCategory(categoryItem)) {
+        if (_hasFeaturedCategory(categoryItem)) {
           Navigator.pushNamed(context, RoutePath.featuredCategoryRoute,
               arguments: {
                 "id": categoryItem.id,
                 "categoryname": categoryItem.categoryName
               });
         } else {
-          print(_isFeaturedCategory(categoryItem));
+          print(_hasFeaturedCategory(categoryItem));
         }
       },
       child: BackgroundImage(
@@ -92,7 +91,7 @@ class _CategoryBuilderState extends State<CategoryBuilder> {
     );
   }
 
-  bool _isFeaturedCategory(ProductCategory productCategory) {
+  bool _hasFeaturedCategory(ProductCategory productCategory) {
     return (productCategory?.featuredCategory?.isNotEmpty) ?? false;
   }
 }

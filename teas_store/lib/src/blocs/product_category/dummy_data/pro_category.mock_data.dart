@@ -6,7 +6,7 @@ import 'package:teas_store/src/utils/constants/images.constant.dart';
 import 'package:teas_store/src/utils/id_generator.util.dart';
 
 class ProductCategoryMockData {
-  List<ProductCategory> _categories = [
+  static final List<ProductCategory> _categories = [
     ProductCategory(
         id: IdGenerator().getID(),
         categoryName: 'Teas',

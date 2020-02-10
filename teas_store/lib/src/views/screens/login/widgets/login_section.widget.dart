@@ -22,7 +22,7 @@ class _LoginSectionState extends State<LoginSection> {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: 25.0, horizontal: 30.0),
+        padding: EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 0),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
@@ -32,10 +32,11 @@ class _LoginSectionState extends State<LoginSection> {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             _buildHeading(),
             WidgetSpacer(
-              height: 20.0,
+              height: 25.0,
             ),
             _buildLoginForm(),
             _buildLoginButton(),
@@ -63,22 +64,17 @@ class _LoginSectionState extends State<LoginSection> {
           Row(
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
-              Flexible(
-                child: Text('Don\'t have an account ?'),
-                flex: 2,
-              ),
-              Flexible(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 4),
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.pushNamed(context, RoutePath.signUpRoute);
-                    },
-                    child: Container(
-                      child: Text(
-                        'Sign up here.',
-                        style: TextStyleConstant.ANCHOR_TEXT,
-                      ),
+              Text('Don\'t have an account ?'),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, RoutePath.signUpRoute);
+                  },
+                  child: Container(
+                    child: Text(
+                      'Sign up here.',
+                      style: TextStyleConstant.ANCHOR_TEXT,
                     ),
                   ),
                 ),
@@ -94,7 +90,7 @@ class _LoginSectionState extends State<LoginSection> {
     return FormBuilder(
       key: _formState,
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           FormBuilderTextField(
@@ -156,9 +152,7 @@ class _LoginSectionState extends State<LoginSection> {
       child: RoundedButton(
         buttonLabel: 'Login',
         onPress: () {
-          //TODO implement authenticate here
-          //TOTO implement navigation
-          print('Navigate to Home screen');
+          Navigator.pushNamed(context, RoutePath.homeRoute);
           if (_formState.currentState.saveAndValidate()) {
             print(_formState.currentState.value);
           }

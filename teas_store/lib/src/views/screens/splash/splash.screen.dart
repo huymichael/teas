@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void openStartScreen() {
     Future.delayed(Duration(seconds: 3), () {
       Navigator.pushNamedAndRemoveUntil(
-          context, RoutePath.homeRoute, (_) => false);
+          context, RoutePath.rootRoute, (_) => false);
     });
   }
 }

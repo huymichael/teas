@@ -22,19 +22,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
       body: Stack(
         children: <Widget>[
           Container(
+            color: Colors.transparent,
             height: _screenHeight * 0.5,
             child: BackgroundImage(
               imgUrl: ImageConstant.SIGN_UP_SCREEN_BACKGROUND,
               colorFilter: ColorConstant.DARK_FILTER,
-              backgroundFit: BoxFit.contain,
-              backgrounAlign: Alignment.topCenter,
+              backgroundFit: BoxFit.cover,
+              backgroundAlign: Alignment.topCenter,
             ),
           ),
           SingleChildScrollView(
             physics: BouncingScrollPhysics(),
             child: Container(
-              height: _screenHeight,
-              width: _screenWidth,
               child: SafeArea(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -52,7 +51,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             top: 20,
             child: IconButton(
               onPressed: () {
-                Navigator.pushNamed(context, RoutePath.homeRoute);
+                Navigator.pushNamed(context, RoutePath.rootRoute);
               },
               icon: Icon(
                 Icons.close,

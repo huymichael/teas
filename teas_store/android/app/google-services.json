@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "608276628681",
+    "firebase_url": "https://teas-store.firebaseio.com",
+    "project_id": "teas-store",
+    "storage_bucket": "teas-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608276628681:android:00dec66e9201b56c473918",
+        "android_client_info": {
+          "package_name": "com.example.teas_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608276628681-lv4ncanaqhdu90i1ah41gtqa1ted8j5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWm4xxwCJhOOH0kznZ0A-sTJgptLrchCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608276628681-lv4ncanaqhdu90i1ah41gtqa1ted8j5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

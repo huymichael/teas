@@ -20,10 +20,10 @@ class SignUpTopWelcome extends StatelessWidget {
           ),
           Text(
             'Hello there!',
-            style: TextStyleConstant.TITLE_BOLD_30,
+            style: TextStyleConstant.BOLD_TITLE_30,
           ),
           Text('Let\'s setup your account!',
-              style: TextStyleConstant.TITLE_BOLD_20),
+              style: TextStyleConstant.REGULAR_TITLE_20),
         ],
       ),
     );

@@ -5,12 +5,14 @@ class BackgroundImage extends StatelessWidget {
       {@required this.imgUrl,
       this.colorFilter,
       this.backgroundFit,
-      this.backgrounAlign});
+      this.backgroundAlign,
+      this.widget});
 
   final String imgUrl;
   final ColorFilter colorFilter;
   final BoxFit backgroundFit;
-  final Alignment backgrounAlign;
+  final Alignment backgroundAlign;
+  final Widget widget;
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +26,9 @@ class BackgroundImage extends StatelessWidget {
             ),
             colorFilter: colorFilter,
             fit: backgroundFit ?? BoxFit.cover,
-            alignment: backgrounAlign ?? Alignment.center),
+            alignment: backgroundAlign ?? Alignment.center),
       ),
+      child: widget,
     );
   }
 }

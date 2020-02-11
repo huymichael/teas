@@ -1,27 +1,31 @@
+import 'package:teas_store/src/blocs/product_category/dummy_data/product_item.mock_data.dart';
 import 'package:teas_store/src/models/products/product_category.model.dart';
 import 'package:teas_store/src/utils/constants/images.constant.dart';
 import 'package:teas_store/src/utils/id_generator.util.dart';
 
 class FeaturedCategoryMockData {
-  final List<ProductCategory> featuredTeaList = [
+  static final List<ProductCategory> featuredTeaList = [
     ProductCategory(
         id: IdGenerator().getID(),
         categoryName: 'Green Tea',
         categoryImgUrl: ImageConstant.CATEGORY_GREEN_TEA,
         categoryDesc:
-            'Discover the perfect natural drink to take maximum care of your body.'),
+            'Discover the perfect natural drink to take maximum care of your body.',
+        productItems: ProductItemData.greenTeas),
     ProductCategory(
         id: IdGenerator().getID(),
         categoryName: 'Black Tea',
         categoryImgUrl: ImageConstant.CATEGORY_BLACK_TEA,
         categoryDesc:
-            'The natural drink characterised by its stimulant properties and an intense flavour with a full body'),
+            'The natural drink characterised by its stimulant properties and an intense flavour with a full body',
+        productItems: ProductItemData.blackTeas),
     ProductCategory(
         id: IdGenerator().getID(),
         categoryName: 'White Tea',
         categoryImgUrl: ImageConstant.CATEGORY_WHITE_TEA,
         categoryDesc:
-            'The tea of beauty par excellence that you will fall in love with for its delicate flavour and fine aroma'),
+            'The tea of beauty par excellence that you will fall in love with for its delicate flavour and fine aroma',
+        productItems: ProductItemData.whiteTeas),
     ProductCategory(
         id: IdGenerator().getID(),
         categoryName: 'Oolong Tea',
@@ -42,7 +46,7 @@ class FeaturedCategoryMockData {
             'The most ancient Japanese tea rich in flavour and properties.'),
   ];
 
-  final List<ProductCategory> featuredTeapotList = [
+  static final List<ProductCategory> featuredTeapotList = [
     ProductCategory(
       id: IdGenerator().getID(),
       categoryName: 'Glass Teapots',
@@ -73,7 +77,7 @@ class FeaturedCategoryMockData {
     ),
   ];
 
-  final List<ProductCategory> featuredTeacupList = [
+  static final List<ProductCategory> featuredTeacupList = [
     ProductCategory(
       id: IdGenerator().getID(),
       categoryName: 'Glass Mugs',

@@ -66,7 +66,10 @@ class _CategoryBuilderState extends State<CategoryBuilder> {
                 "categoryname": categoryItem.categoryName
               });
         } else {
-          print(_hasFeaturedCategory(categoryItem));
+          Navigator.pushNamed(context, RoutePath.productRoute, arguments: {
+            'id': categoryItem.id,
+            'categoryname': categoryItem.categoryName
+          });
         }
       },
       child: BackgroundImage(

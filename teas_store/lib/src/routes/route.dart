@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teas_store/src/routes/route_path.dart';
+import 'package:teas_store/src/views/screens/home/category/featured_category.screen.dart';
 import 'package:teas_store/src/views/screens/home/home.screen.dart';
-import 'package:teas_store/src/views/screens/home/featured_category.screen.dart';
+import 'package:teas_store/src/views/screens/home/product/product_item.screen.dart';
 import 'package:teas_store/src/views/screens/login/login.screen.dart';
 import 'package:teas_store/src/views/screens/reset_passwrod.screen/forgot_password.screen.dart';
 import 'package:teas_store/src/views/screens/sign_up/sign_up.screen.dart';
@@ -26,7 +27,15 @@ class AppRoute {
         return _goTo(HomeScreen());
       case RoutePath.featuredCategoryRoute:
         var argument = settings.arguments as Map<String, String>;
-        return _goTo(FeaturedCategoryScreen(
+        return _goTo(
+          FeaturedCategoryScreen(
+            categoryId: argument['id'],
+            categoryName: argument['categoryname'],
+          ),
+        );
+      case RoutePath.productRoute:
+        var argument = settings.arguments as Map<String, String>;
+        return _goTo(ProductScreen(
           categoryId: argument['id'],
           categoryName: argument['categoryname'],
         ));

@@ -24,4 +24,6 @@ class ProductCategoryProvider {
         .firstWhere((item) => item.id == categoryId, orElse: () => null);
     return _filterCategory.productItems;
   }
+
+  _findProduct(String id) {}
 }

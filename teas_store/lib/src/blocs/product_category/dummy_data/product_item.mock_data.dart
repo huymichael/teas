@@ -323,9 +323,9 @@ class ProductItemData {
         itemPrice: 18.95),
     ProductItem(
         itemId: IdGenerator().getID(),
-        itemName:
+        itemName: 'Wood Tray',
+        itemDesc:
             'Simple attractive design. It is very inconvenience to break Pu_Erh tea to small pieces on this tray.',
-        itemDesc: '',
         itemImgUrl: ImageConstant.CATEGORY_TEA_ACCESSORIES,
         itemPrice: 0.0),
     ProductItem(

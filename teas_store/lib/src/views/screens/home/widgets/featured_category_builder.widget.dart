@@ -59,6 +59,9 @@ class _FeaturedCategoryBuilderState extends State<FeaturedCategoryBuilder> {
 
   Widget _buildListItem(ProductCategory featuredCateItem) {
     return InkWell(
+      onTap: () {
+        print(featuredCateItem.categoryName);
+      },
       child: Container(
         child: BackgroundImage(
           imgUrl: featuredCateItem.categoryImgUrl,

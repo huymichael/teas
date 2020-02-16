@@ -43,7 +43,7 @@ class ProductCategoryBloc implements BlocBase {
   fetchProductById(String categoryId) async {
     List<ProductItem> _hasProduct =
         await _productRepository.fetchProductById(categoryId);
-    if (_hasProduct.length > 0) {
+    if ((_hasProduct??[]).length > 0) {
       _getProductById.sink.add(_hasProduct);
     } else {
       _getProductById.sink.addError('No data');

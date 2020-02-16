@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teas_store/src/blocs/product_category/product_category.bloc.dart';
 import 'package:teas_store/src/models/products/product_category.model.dart';
+import 'package:teas_store/src/routes/route_path.dart';
 import 'package:teas_store/src/shared/widgets/background_image.widget.dart';
 import 'package:teas_store/src/utils/constants/colors.constant.dart';
 import 'package:teas_store/src/utils/constants/text_style.constant.dart';
@@ -60,6 +61,10 @@ class _FeaturedCategoryBuilderState extends State<FeaturedCategoryBuilder> {
   Widget _buildListItem(ProductCategory featuredCateItem) {
     return InkWell(
       onTap: () {
+        Navigator.pushNamed(context, RoutePath.productRoute, arguments: {
+          'id': featuredCateItem.id,
+          'categoryname': featuredCateItem.categoryName
+        });
         print(featuredCateItem.categoryName);
       },
       child: Container(

@@ -17,7 +17,6 @@ class _ProductBuilderState extends State<ProductBuilder> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _bloc.fetchProductById(widget.categoryId);
   }
@@ -59,6 +58,7 @@ class _ProductBuilderState extends State<ProductBuilder> {
 
   Widget _buildProductList(ProductItem productItem) {
     return Card(
+
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[

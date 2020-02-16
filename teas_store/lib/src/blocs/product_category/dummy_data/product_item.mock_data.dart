@@ -43,7 +43,7 @@ class ProductItemData {
   static final List<ProductItem> blackTeas = [
     ProductItem(
       itemId: IdGenerator().getID(),
-      itemName: 'English Breakfast Bla',
+      itemName: 'English Breakfast',
       itemDesc:
           'Our English Breakfast Tea combines top-quality black teas from premier tea gardens. The result is a very distinctive, rich tea. It takes milk and sugar very well. This stimulating tea is the perfect morning wake-up drink.',
       itemPrice: 8.95,

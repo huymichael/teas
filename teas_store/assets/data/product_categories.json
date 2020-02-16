@@ -1,0 +1,374 @@
+{
+  "productCategory": [
+    {
+      "id": "6ba305e8-b37f-46ff-80d4-a3ede4d0eb36",
+      "categoryName": "Teas",
+      "categoryDesc": "Let yourself fall in love with the aromas and flavours of our best selection.",
+      "categoryImgUrl": "assets/images/cha_3.jpg",
+      "featuredCategory": [
+        {
+          "id": "0355f165-d30e-4e1f-a9cb-98365fb1b28e",
+          "categoryName": "Green Tea",
+          "categoryDesc": "Discover the perfect natural drink to take maximum care of your body.",
+          "categoryImgUrl": "assets/images/green_tea.jpg",
+          "featuredCategory": [],
+          "productItems": [
+            {
+              "itemId": "8805954e-c013-4afe-899d-ca53061bed57",
+              "itemName": "Dragon Phoenix Pearl Jasmine Tea",
+              "itemDesc": "Finest downy green leaves are hand-rolled into small spheres and scented with fragrant jasmine blossoms. It brews up an exquisite cup with an alluring aroma and delicate sweet floral taste.",
+              "itemImgUrl": "assets/images/green_tea.jpg",
+              "itemPrice": "18.95"
+            },
+            {
+              "itemId": "f1227f0a-0a72-4bf0-9703-5f8d3890a879",
+              "itemName": "Glenburn Darjeeling Green Tea",
+              "itemDesc": "An aromatic and light Darjeeling green tea from the revered Glenburn Estate. It brews to a lovely light golden color and is smooth-drinking with a sweet muscatel taste and a pleasant, lingering floral aroma.",
+              "itemImgUrl": "assets/images/green_tea.jpg",
+              "itemPrice": "11.19"
+            },
+            {
+              "itemId": "ef6d21d7-831e-42bb-a1ee-93cf8337a59f",
+              "itemName": "Jasmine Blossom Green Tea",
+              "itemDesc": "Jasmine is, without a doubt, one of the world's great teas. Our Jasmine Blossom blend has downy silver tips and most of the spent jasmine blossoms have been removed. It has an intoxicating aroma and a balanced and delicate flavor. This romantic tea may be enjoyed any time of the day but is especially pleasant in the evening.",
+              "itemImgUrl": "assets/images/green_tea.jpg",
+              "itemPrice": "7.95"
+            },
+            {
+              "itemId": "172db8ee-0f72-4f20-b3b9-70604c610549",
+              "itemName": "Organic Chamong First Flush Darjeeling Green Tea",
+              "itemDesc": "First flush Darjeeling teas are unique in character and delicate in flavor. Organic Chamong First Flush Darjeeling is simply one of the best. Leaves are hand-picked and grown at elevations ranging from 3700 ft to over 6000 ft. The leaves are a beautiful wiry green with flecks of silvery tips. It has an exquisite bouquet, and the taste is fresh and flavorful with lively muscatel, floral, and citrus notes. One sip and you'll fall in love.",
+              "itemImgUrl": "assets/images/green_tea.jpg",
+              "itemPrice": "28.39"
+            },
+            {
+              "itemId": "e91a6473-fb4a-4b2e-8ab5-df2d885e9281",
+              "itemName": "Moroccan Mint Green Tea",
+              "itemDesc": "A delightful and exotic blend of green tea and mints, with a hint of lemon. China Young Hyson green tea, spearmint and peppermint from Oregon, and freshly cut lemongrass are combined for a fragrant, refreshing and aromatic Moroccan Mint green tea. It is a superb drink hot or iced. Try it Moroccan style, sweetened with sugar.",
+              "itemImgUrl": "assets/images/green_tea.jpg",
+              "itemPrice": "8.95"
+            }
+          ]
+        },
+        {
+          "id": "6a4a2314-e20d-4ace-bf27-594a035bf5a5",
+          "categoryName": "Black Tea",
+          "categoryDesc": "The natural drink characterised by its stimulant properties and an intense flavour with a full body",
+          "categoryImgUrl": "assets/images/black_tea.jpg",
+          "featuredCategory": [],
+          "productItems": [
+            {
+              "itemId": "4eedd0b5-e225-4ac7-acf6-6e640d1de561",
+              "itemName": "English Breakfast",
+              "itemDesc": "Our English Breakfast Tea combines top-quality black teas from premier tea gardens. The result is a very distinctive, rich tea. It takes milk and sugar very well. This stimulating tea is the perfect morning wake-up drink.",
+              "itemImgUrl": "assets/images/black_tea.jpg",
+              "itemPrice": "8.95"
+            },
+            {
+              "itemId": "3fe8badb-f174-48df-9c6c-9eea75c5b9c9",
+              "itemName": "Ceylon Breakfast",
+              "itemDesc": "Ceylon Breakfast is a smooth, mellow and mild black tea with a medium body, light astringency and lingering finish. It brews a beautiful golden color in the cup and will accept the addition of milk and sugar.",
+              "itemImgUrl": "assets/images/black_tea.jpg",
+              "itemPrice": "9.50"
+            },
+            {
+              "itemId": "c9c3cd6e-83fc-4dcc-baec-6bf3ab0327fb",
+              "itemName": "Lapsang Souchong",
+              "itemDesc": "From the Fujian province of China comes this very distinctive tea with its exotic smoky flavor. After plucking, the leaves are withered over cypress or pine wood fires. After the rolling process, they are placed into wooden barrels until they begin to emit their own pleasant aroma. As a final step they are placed in bamboo baskets and hung on racks over smoky pine fires where they dry and absorb the essence of the smoke.",
+              "itemImgUrl": "assets/images/black_tea.jpg",
+              "itemPrice": "7.95"
+            },
+            {
+              "itemId": "18991c9c-ad5a-457a-a532-088313ba8bf2",
+              "itemName": "Sweet Cinnamon",
+              "itemDesc": "To create our Sweet Cinnamon tea, we've combined the finest cinnamon with a smooth blend of black teas. The result is a spicy delight with an irresistible aroma. Cinnamon tea is what many would consider to be \"comfort tea\". Our Sweet Cinnamon makes a great after-dinner beverage and goes well with fruit and pastries. Brew a big pot and the wonderful aroma will make your home seem warmer on even the chilliest night.",
+              "itemImgUrl": "assets/images/black_tea.jpg",
+              "itemPrice": "8.75"
+            },
+            {
+              "itemId": "d577f9d5-d882-46f9-9009-dc9aac72d043",
+              "itemName": "Double Bergamot Earl Grey Decaf",
+              "itemDesc": "A naturally decaffeinated version of our popular Double Bergamot Earl Grey. Twice the aromatic bergamot oil is added to this tea for more of that distinctive Earl Grey flavor.",
+              "itemImgUrl": "assets/images/black_tea.jpg",
+              "itemPrice": "10.95"
+            }
+          ]
+        },
+        {
+          "id": "cd5e9bd2-c6bf-4234-920b-7a48985e8485",
+          "categoryName": "White Tea",
+          "categoryDesc": "The tea of beauty par excellence that you will fall in love with for its delicate flavour and fine aroma",
+          "categoryImgUrl": "assets/images/white_tea.jpg",
+          "featuredCategory": [],
+          "productItems": [
+            {
+              "itemId": "57248648-1060-40ce-8b4c-d19b6377fa0d",
+              "itemName": "White Tea White Daiquiri",
+              "itemDesc": "Refreshing blend made with different white teas and fruits like apple, pineapple and coconut, make this tea an exotic and stimulating combination for this Summer. With apple taste and a slight sour touch, it will seduce your palate with its sweet coconut background. A blend inspired by the classic Cuban cocktail with a healthy base of white teas with antioxidant and diuretic effects.",
+              "itemImgUrl": "assets/images/white_tea.jpg",
+              "itemPrice": "15.50"
+            },
+            {
+              "itemId": "253842e9-2b0f-440b-a52a-deda64e318be",
+              "itemName": "White Tea Fresh Melon",
+              "itemDesc": "All joins together for this Summer so you can enjoy an antioxidant, cleansing and refreshing drink. Enjoy its intense melon flavor with a subtle touch of pineapple. INGREDIENTS: Blend of white teas, candied pineapple, apple, green tea, candied melon, natural watermelon flavouring, calendula petals.",
+              "itemImgUrl": "assets/images/white_tea.jpg",
+              "itemPrice": "18.50"
+            },
+            {
+              "itemId": "ded2f7ef-4276-4a1a-98b3-fff5fde109da",
+              "itemName": "White Tea White Kiss",
+              "itemDesc": "High quality White Tea, Pai Mu Tan, flavoured with caramelised strawberries. A wonderful golden infusion, sweet and fruity bouquet and silky body. White Tea enthusiasts looking for a flavoured version will love it. Also ideal for fans of flavoured Green Teas. INGREDIENTS: White tea (Pai Mu Tan), strawberry, forest strawberry leaves and strawberry flavouring",
+              "itemImgUrl": "assets/images/white_tea.jpg",
+              "itemPrice": "16.35"
+            },
+            {
+              "itemId": "8ddd6e6a-9148-49a6-b88f-b00531903d38",
+              "itemName": "White Tea Sakura Beauty Blend",
+              "itemDesc": "White and Green Tea with Morello cherry, Matcha Tea and rose buds. Funcionality: Beautifying. More ingredients: Antioxidant, diuretic, depurative. Ingredients: White tea, green tea, Morello cherry, matcha, rose buds, almond, kiwi pieces, apple, cornflower petals",
+              "itemImgUrl": "assets/images/white_tea.jpg",
+              "itemPrice": "12.95"
+            },
+            {
+              "itemId": "d2261c45-7dad-4d30-8aa6-024e748f3b4a",
+              "itemName": "White Tea Silver Needles (Bai Hao Yin Zhen)",
+              "itemDesc": "White Tea made exclusively from tender, unopened tea leaf buds covered with white velvet fuzz. Its manufacturing process is carried out completely by hand. In only a few years, this tea has become one of the most appreciated and sought after teas by connoisseurs due to its floral aroma and silky, velvety texture. Moreover, it is full of antioxidants but has low theine content. yields three infusions: 3 minutes for the first one, 4 minutes for the second one and 5 minutes for the third one. INGREDIENTS: White tea made exclusively from young, unopened buds, covered in a delicate white bloom.",
+              "itemImgUrl": "assets/images/white_tea.jpg",
+              "itemPrice": "25.0"
+            }
+          ]
+        },
+        {
+          "id": "155d7454-e0f6-4f4e-80e6-0bf78e316423",
+          "categoryName": "Oolong Tea",
+          "categoryDesc": "Aromatic, sweet and enveloping are the characteristics belonging to the flavour of one of the most exotic teas",
+          "categoryImgUrl": "assets/images/oolong_tea.jpg",
+          "featuredCategory": [],
+          "productItems": [
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            }
+          ]
+        },
+        {
+          "id": "5331cdf1-a716-42c8-8134-1d6c56700d54",
+          "categoryName": "Pu-Erh Tea",
+          "categoryDesc": "Start enjoying age-old red tea while benefitting from its medicinal properties.",
+          "categoryImgUrl": "assets/images/puerh_tea.jpg",
+          "featuredCategory": [],
+          "productItems": [
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            }
+          ]
+        },
+        {
+          "id": "d7c56dd8-88ce-4780-a4c8-e2c56d010f59",
+          "categoryName": "Matcha Tea",
+          "categoryDesc": "The most ancient Japanese tea rich in flavour and properties.",
+          "categoryImgUrl": "assets/images/matcha_tea.jpg",
+          "featuredCategory": [],
+          "productItems": [
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            },
+            {
+              "itemId": "",
+              "itemName": "",
+              "itemDesc": "",
+              "itemImgUrl": "",
+              "itemPrice": ""
+            }
+          ]
+        }
+      ],
+      "productItems": []
+    },
+    {
+      "id": "ec724d6a-2d55-48fb-b61a-bd1cf0d5b34e",
+      "categoryName": "Teapots",
+      "categoryDesc": "The iconic tea accessory that you cannot miss out on.",
+      "categoryImgUrl": "assets/images/teapot_8.jpg",
+      "featuredCategory": [],
+      "productItems": []
+    },
+    {
+      "id": "6ba305e8-b37f-46ff-80d4-a3ede4d0eb36",
+      "categoryName": "Teacups - Mugs",
+      "categoryDesc": "Discover our most exclusive designs. With or without filter, you can choose the one you like most!",
+      "categoryImgUrl": "assets/images/acces_2.jpg",
+      "featuredCategory": [],
+      "productItems": []
+    },
+    {
+      "id": "8f6c9138-ec75-4e0b-b2c7-ae6f008d21ae",
+      "categoryName": "Infusers",
+      "categoryDesc": "Make the most of the aroma and flavour of your loose tea with one of these original infusers",
+      "categoryImgUrl": "assets/images/acces_8.jpg",
+      "featuredCategory": [],
+      "productItems": [
+        {
+          "itemId": "0471a7fb-38ab-49b3-b47e-416868f74703",
+          "itemName": "Tea Shop Green Chain Infuser",
+          "itemDesc": "A fun and original gadget to infuse our tea, herbal tea or rooibos. Fill the infuser up to half of its capacity. Content: 2 gr.",
+          "itemImgUrl": "assets/images/acces_8.jpg",
+          "itemPrice": "3.60"
+        },
+        {
+          "itemId": "1a895b50-011a-4baf-9f15-d9003b423272",
+          "itemName": "Netz 6 Cm Infuser",
+          "itemDesc": "Infuser with a large capacity and a good closing system. Perfect for concentrates and cold tea.",
+          "itemImgUrl": "assets/images/acces_8.jpg",
+          "itemPrice": "7.80"
+        },
+        {
+          "itemId": "66b2d6fb-fd81-4c3b-90c6-84446a4035d0",
+          "itemName": "Tea Shop Konic 6 Cm Filter",
+          "itemDesc": "Stainless steel filter with an ultra-fine mesh and exclusive Tea Shop design.",
+          "itemImgUrl": "assets/images/acces_8.jpg",
+          "itemPrice": "9.30"
+        },
+        {
+          "itemId": "cfdf01d2-0fcf-4388-8b8c-48a7df97f41d",
+          "itemName": "Personal Paper Filter (64 Bags)",
+          "itemDesc": "Ecological and compostable filter. Facilitates preparation in tight spaces.",
+          "itemImgUrl": "assets/images/acces_8.jpg",
+          "itemPrice": "6.80"
+        }
+      ]
+    },
+    {
+      "id": "82a895ac-d374-4b66-925a-1aa0f00a1696",
+      "categoryName": "Accessories",
+      "categoryDesc": "Complement your experience with one of these practical accessories",
+      "categoryImgUrl": "assets/images/acces_9.jpg",
+      "featuredCategory": [],
+      "productItems": [
+        {
+          "itemId": "1be58392-7869-4e22-9210-3661b9a9de67",
+          "itemName": "Chinese Red Wood Tong",
+          "itemDesc": "This tool is used for holding the cups and taking the leaves away from teapot.",
+          "itemImgUrl": "assets/images/acces_9.jpg",
+          "itemPrice": "3.95"
+        },
+        {
+          "itemId": "db33edaa-7118-4a42-ac0d-23467aae89b4",
+          "itemName": "Chinese Red Wood Scoop",
+          "itemDesc": "This tool is used for measuring the amount of tea leaves into the teapot.",
+          "itemImgUrl": "assets/images/acces_9.jpg",
+          "itemPrice": "4.75"
+        },
+        {
+          "itemId": "5171f2df-5f4e-4cd1-aa4a-22dc39115522",
+          "itemName": "Hard Wood Handle Puerh Knife Needle",
+          "itemDesc": "This knife is specially design for prying the leaves apart from compressed Pu-Erh tea. For using it safely, take the knife with your hands towards the front. Then insert it into the tea cake, tou, or brick about 1 to 2 inches. Shake the knife to make the leaves into small pieces.",
+          "itemImgUrl": "assets/images/acces_9.jpg",
+          "itemPrice": "8.50"
+        },
+        {
+          "itemId": "bf916c59-6d4c-4d6d-a41b-9cbbce9fed85",
+          "itemName": "Modern Bamboo Pu_Erh Breaking Tea Tray",
+          "itemDesc": "Simple attractive design. It is very inconvenience to break Pu_Erh tea to small pieces on this tray.",
+          "itemImgUrl": "assets/images/acces_9.jpg",
+          "itemPrice": "18.95"
+        },
+        {
+          "itemId": "33b683fb-5f27-4c5b-a723-6d440f257dec",
+          "itemName": "Yixing Clay Bagua Incense Burner",
+          "itemDesc": "Yixing Clay Bagua Incense Burner for traditional tea ceremony or relaxation.",
+          "itemImgUrl": "assets/images/acces_9.jpg",
+          "itemPrice": "19.99"
+        }
+      ]
+    }
+  ]
+}

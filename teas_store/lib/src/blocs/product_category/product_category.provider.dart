@@ -19,11 +19,27 @@ class ProductCategoryProvider {
   }
 
   Future<List<ProductItem>> fetchProductById(String categoryId) async {
-    await Future.delayed(Duration(microseconds: 500));
-    final ProductCategory _filterCategory = _productCategories
-        .firstWhere((item) => item.id == categoryId, orElse: () => null);
-    return _filterCategory.productItems;
+    List<ProductItem> _result = [];
+    for (final cateItem in _productCategories) {
+      if (cateItem.id == categoryId) {
+        _result = cateItem.productItems;
+      } else if ((cateItem?.featuredCategory ?? []).isNotEmpty) {
+        _result = _checkFeaturedCategory(cateItem.featuredCategory, categoryId);
+        print(_result);
+      }
+    }
+    return _result;
   }
 
-  _findProduct(String id) {}
+  _checkFeaturedCategory(
+      List<ProductCategory> featuredCategoryList, String categoryId) {
+    for (final featuredCateItem in featuredCategoryList) {
+      if (featuredCateItem.id == categoryId) {
+        return featuredCateItem.productItems;
+      } else if ((featuredCateItem?.featuredCategory ?? [].isNotEmpty)) {
+        return _checkFeaturedCategory(
+            featuredCateItem.featuredCategory, categoryId);
+      }
+    }
+  }
 }

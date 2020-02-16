@@ -26,6 +26,7 @@ dependencies:
   uuid: ^2.0.4
   flutter_form_builder: ^3.7.3
   rxdart: ^0.23.1
+  http: ^0.12.0+4
 
 
 dev_dependencies:
@@ -46,6 +47,7 @@ flutter:
   assets:
     - assets/
     - assets/images/
+    - assets/data/
     - assets/icons/
     - assets/fonts/
     - assets/fonts/open_sans/
